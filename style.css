@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #161c2d;
+    display: grid;
+    width: 100%;
+    position: sticky;
+    top: 0
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    padding: 0.25rem 0.25rem;
+    float: left;
+}
+
+@media only screen and (max-width: 410) {
+    #logo {
+        width: 40px;
+        height: 40px;
+    }
+    .navbar a {
+        font-size: 1rem;
+    }
+}
