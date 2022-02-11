@@ -11,7 +11,8 @@ body {
     display: grid;
     width: 100%;
     position: sticky;
-    top: 0
+    top: 0;
+    z-index: 500;
 }
 
 .navbar ul {
@@ -44,24 +45,42 @@ body {
     text-align: center;
     font-size: 5vw;
     font-family: 'Roboto', sans-serif;
-    margin: 5%;
-    background-image: -webkit-linear-gradient(#6052c4, #52b3c4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin: 5vw;
+    color: #161c2de3;
+    border: 2px solid rgb(94,111,203);
+    width: 45%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-62.5%);
 }
+
+.shine-jil {
+    place-items: center;
+}
+
+.btn-container {
+    position: relative;
+}
+ 
 
 .project {
     display: flex;
     flex-flow: row-reverse;
     align-items: center;
-    justify-content: space-around;
-    margin: 4vw 4vw;
+    justify-content: center;
     border: 2px solid rgb(94,111,203);
     border-radius: 20px;
     background-color: rgba(94,111,203,0.2);
     padding: 1.5em;
+    position: absolute;
+    left: 15px;
 }
 
+
+.content {
+    display: flex;
+    justify-content: center;
+}
 
 .christmas-tree {
     flex-flow: row;
@@ -69,6 +88,10 @@ body {
 
 .firework {
     flex-flow: row;
+}
+
+.swiper {
+    width: 85%
 }
 
 .main-text {
