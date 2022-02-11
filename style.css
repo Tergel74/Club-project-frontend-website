@@ -27,7 +27,7 @@ body {
 .navbar a {
     text-decoration: none;
     color: white;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 2rem;
     margin: 0;
 }
@@ -40,6 +40,55 @@ body {
     float: left;
 }
 
+.heading-text {
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Roboto', sans-serif;
+    margin: 5%;
+    background-image: -webkit-linear-gradient(#6052c4, #52b3c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+  
+
+.project {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 7.5vw;
+}
+
+
+.christmas-tree {
+    flex-flow: row;
+}
+
+.firework {
+    flex-flow: row;
+}
+
+.main-text {
+    font-size: 2vw;
+    font-family: 'Roboto';
+
+    width: 50vw;
+    padding: 1.5em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+line {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-bottom: 1px solid #000;
+    display: block;
+}
+
 @media only screen and (max-width: 410) {
     #logo {
         width: 40px;
@@ -47,5 +96,8 @@ body {
     }
     .navbar a {
         font-size: 1rem;
+    }
+    .img {
+    width: 100%;
     }
 }
